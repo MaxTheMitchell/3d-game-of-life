@@ -45,24 +45,10 @@ type alias Model = {
 
 init : () -> (Model, Cmd Msg)
 init () =
-  ( Model 0 thing2 0 0 0 10, Cmd.none)
+  ( Model 0 defualtShape 0 0 0 10, Cmd.none)
 
-line : List(Cube)
-line = [
-      Cube 1 0 0
-      ,Cube 0 0 0
-      ,Cube -1 0 0
-    ]
-
-thing : List(Cube)
-thing = [
-  Cube 1 0 0
-  ,Cube 0 1 0
-  ,Cube -1 0 0
-  ,Cube 0 -1 0]
-
-thing2 : List(Cube)
-thing2 = [
+defualtShape : List(Cube)
+defualtShape = [
   Cube 0 1 0 
   ,Cube 0 0 1 
   ,Cube 0 -1 0 
