@@ -1,5 +1,3 @@
--- Render a spinning cube.
---
 -- Dependencies:
 --   elm install elm-explorations/linear-algebra
 --   elm install elm-explorations/webgl
@@ -182,7 +180,11 @@ view model =
   Html.div[style "background-color" "black", style "display" "flex"]
   [
     WebGL.toHtml
-    [ width animationWidth, height windowHeight, style "display" "block"
+    [ 
+      width animationWidth
+      ,height windowHeight
+      ,style "display" "block"
+      ,style "width" "75%"
     ]
     (drawCubes model)
     , Html.div[ 
